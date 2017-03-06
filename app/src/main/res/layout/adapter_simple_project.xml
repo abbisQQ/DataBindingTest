@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<data>
+
+<variable
+    name="simpleObject"
+    type="com.example.babis.databindingtest.SimpleObject">
+
+</variable>
+    
+</data>
+
+
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{simpleObject.name}"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{simpleObject.age}"
+        android:textSize="16sp"/>
+
+
+
+</LinearLayout>
+
+
+</layout>
